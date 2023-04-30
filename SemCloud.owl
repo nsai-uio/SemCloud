@@ -1,97 +1,97 @@
-@prefix : <http://www.semanticweb.org/nsai/20230430/semcloud#> .
+@prefix : <https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/nsai/20230430/semcloud> .
+@base <https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl> .
 
-<http://www.semanticweb.org/nsai/20230430/semcloud> rdf:type owl:Ontology .
+<https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasComputingRequirement
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasComputingRequirement
 :hasComputingRequirement rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasRequirement .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasCredentials
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasCredentials
 :hasCredentials rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasDataInformation .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasDataInformation
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasDataInformation
 :hasDataInformation rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasFormatInformation
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasFormatInformation
 :hasFormatInformation rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasDataInformation .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasIOCombination
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasIOCombination
 :hasIOCombination rdf:type owl:ObjectProperty ;
                   rdfs:domain :Task ;
                   rdfs:range :IOCombination .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasInput
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasInput
 :hasInput rdf:type owl:ObjectProperty ;
           rdfs:domain :IOCombination ;
           rdfs:range :DataEntity .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasInputData
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasInputData
 :hasInputData rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasLocationInformation
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasLocationInformation
 :hasLocationInformation rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasDataInformation .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasNetworkRequirement
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasNetworkRequirement
 :hasNetworkRequirement rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasRequirement .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasNextLayer
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasNextLayer
 :hasNextLayer rdf:type owl:ObjectProperty ;
               rdfs:domain :DataPreparationLayer ;
               rdfs:range :DataPreparationLayer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasNextTask
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasNextTask
 :hasNextTask rdf:type owl:ObjectProperty ;
              rdfs:domain :Task ;
              rdfs:range :Task .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasOutput
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasOutput
 :hasOutput rdf:type owl:ObjectProperty ;
            rdfs:domain :IOCombination ;
            rdfs:range :DataEntity .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasRequirement
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasRequirement
 :hasRequirement rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasStartingLayer
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasStartingLayer
 :hasStartingLayer rdf:type owl:ObjectProperty ;
                   rdfs:domain :ETLPipeline ;
                   rdfs:range :RetrieveLayer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasStartingTask
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasStartingTask
 :hasStartingTask rdf:type owl:ObjectProperty ;
                  rdfs:domain :ETLPipeline ;
                  rdfs:range :Retrieve .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasStorageRequirement
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasStorageRequirement
 :hasStorageRequirement rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasRequirement .
 
@@ -100,156 +100,156 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasBandwidth
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasBandwidth
 :hasBandwidth rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasChunkSize
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasChunkSize
 :hasChunkSize rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :hasConfiguredResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasCloudAttributes
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasCloudAttributes
 :hasCloudAttributes rdf:type owl:DatatypeProperty ;
                     rdfs:domain :Cloud ;
                     rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasCloudStorage
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasCloudStorage
 :hasCloudStorage rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasConfiguredResource
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasConfiguredResource
 :hasConfiguredResource rdf:type owl:DatatypeProperty ;
                        rdfs:domain :Task ;
                        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstPrepareMemory
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstPrepareMemory
 :hasEstPrepareMemory rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstPrepareStorage
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstPrepareStorage
 :hasEstPrepareStorage rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstPreparemCPU
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstPreparemCPU
 :hasEstPreparemCPU rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstRetrieveBandwidth
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstRetrieveBandwidth
 :hasEstRetrieveBandwidth rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstRetrieveMemory
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstRetrieveMemory
 :hasEstRetrieveMemory rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstRetrieveStorage
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstRetrieveStorage
 :hasEstRetrieveStorage rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstRetrievemCPU
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstRetrievemCPU
 :hasEstRetrievemCPU rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstSliceMemory
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstSliceMemory
 :hasEstSliceMemory rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstSliceStorage
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstSliceStorage
 :hasEstSliceStorage rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstSlicemCPU
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstSlicemCPU
 :hasEstSlicemCPU rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstStoreStorage
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstStoreStorage
 :hasEstStoreStorage rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasEstimatedResource
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasEstimatedResource
 :hasEstimatedResource rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Task ;
                       rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasMaxMemoryBufferCoefficient
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasMaxMemoryBufferCoefficient
 :hasMaxMemoryBufferCoefficient rdf:type owl:DatatypeProperty ;
                                rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasMemoryBufferCoefficient
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasMemoryBufferCoefficient
 :hasMemoryBufferCoefficient rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasMemoryReservation
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasMemoryReservation
 :hasMemoryReservation rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf :hasConfiguredResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasNoRecords
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasNoRecords
 :hasNoRecords rdf:type owl:DatatypeProperty ;
               rdfs:domain :DataEntity ;
               rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasNodeMemory
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasNodeMemory
 :hasNodeMemory rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasNodeNumber
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasNodeNumber
 :hasNodeNumber rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasNodeStorage
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasNodeStorage
 :hasNodeStorage rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasNodemCPU
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasNodemCPU
 :hasNodemCPU rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasRequiredTime
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasRequiredTime
 :hasRequiredTime rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :hasEstimatedResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasSliceSize
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasSliceSize
 :hasSliceSize rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :hasConfiguredResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasStorageBufferCoefficient
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasStorageBufferCoefficient
 :hasStorageBufferCoefficient rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf :hasCloudAttributes .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasStorageMode
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasStorageMode
 :hasStorageMode rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :hasConfiguredResource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#hasVolume
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#hasVolume
 :hasVolume rdf:type owl:DatatypeProperty ;
            rdfs:domain :DataEntity ;
            rdfs:range xsd:string .
@@ -259,26 +259,26 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Cloud
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Cloud
 :Cloud rdf:type owl:Class ;
        rdfs:subClassOf :Resource .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#ComputingRequirement
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#ComputingRequirement
 :ComputingRequirement rdf:type owl:Class ;
                       rdfs:subClassOf :Requirement .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#DataEntity
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#DataEntity
 :DataEntity rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#DataPreparationLayer
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#DataPreparationLayer
 :DataPreparationLayer rdf:type owl:Class ;
                       rdfs:subClassOf :PipelineOrganisation .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#ETLPipeline
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#ETLPipeline
 :ETLPipeline rdf:type owl:Class ;
              rdfs:subClassOf :Task ,
                              [ rdf:type owl:Restriction ;
@@ -287,7 +287,7 @@
                              ] .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#IOCombination
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#IOCombination
 :IOCombination rdf:type owl:Class ;
                rdfs:subClassOf :PipelineOrganisation ,
                                [ rdf:type owl:Restriction ;
@@ -300,69 +300,69 @@
                                ] .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#NetworkRequirement
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#NetworkRequirement
 :NetworkRequirement rdf:type owl:Class ;
                     rdfs:subClassOf :Requirement .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#PipelineOrganisation
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#PipelineOrganisation
 :PipelineOrganisation rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Prepare
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Prepare
 :Prepare rdf:type owl:Class ;
          rdfs:subClassOf :Task .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#PrepareLayer
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#PrepareLayer
 :PrepareLayer rdf:type owl:Class ;
               rdfs:subClassOf :DataPreparationLayer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Requirement
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Requirement
 :Requirement rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Resource
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Resource
 :Resource rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Retrieve
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Retrieve
 :Retrieve rdf:type owl:Class ;
           rdfs:subClassOf :Task .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#RetrieveLayer
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#RetrieveLayer
 :RetrieveLayer rdf:type owl:Class ;
                rdfs:subClassOf :DataPreparationLayer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Slice
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Slice
 :Slice rdf:type owl:Class ;
        rdfs:subClassOf :Task .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#SliceLayer
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#SliceLayer
 :SliceLayer rdf:type owl:Class ;
             rdfs:subClassOf :DataPreparationLayer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#StorageRequirement
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#StorageRequirement
 :StorageRequirement rdf:type owl:Class ;
                     rdfs:subClassOf :Requirement .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Store
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Store
 :Store rdf:type owl:Class ;
        rdfs:subClassOf :Task .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#StoreLayer
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#StoreLayer
 :StoreLayer rdf:type owl:Class ;
             rdfs:subClassOf :DataPreparationLayer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Task
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Task
 :Task rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
                         owl:onProperty :hasNextTask ;
@@ -379,65 +379,65 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#DataEntityRetrieve
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#DataEntityRetrieve
 :DataEntityRetrieve rdf:type owl:NamedIndividual ,
                              :DataEntity .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#DataEntityStore
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#DataEntityStore
 :DataEntityStore rdf:type owl:NamedIndividual ,
                           :DataEntity .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#ETPPipeline1
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#ETPPipeline1
 :ETPPipeline1 rdf:type owl:NamedIndividual ,
                        :ETLPipeline ;
               :hasStartingLayer :RetrieveLayer1 .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#PipelineEndTask
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#PipelineEndTask
 :PipelineEndTask rdf:type owl:NamedIndividual ,
                           :Task .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#PipelineStartTask
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#PipelineStartTask
 :PipelineStartTask rdf:type owl:NamedIndividual ,
                             :Task .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Prepare3
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Prepare3
 :Prepare3 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#ProcessLayer3
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#ProcessLayer3
 :ProcessLayer3 rdf:type owl:NamedIndividual ,
                         :PrepareLayer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Retrieve1
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Retrieve1
 :Retrieve1 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#RetrieveLayer1
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#RetrieveLayer1
 :RetrieveLayer1 rdf:type owl:NamedIndividual ,
                          :RetrieveLayer ;
                 :hasNextLayer :SliceLayer2 .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Slice2
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Slice2
 :Slice2 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#SliceLayer2
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#SliceLayer2
 :SliceLayer2 rdf:type owl:NamedIndividual ,
                       :SliceLayer .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#Store5
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#Store5
 :Store5 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/nsai/20230430/semcloud#StoreLayer4
+###  https://github.com/nsai-uio/SemCloud/blob/main/SemCloud.owl#StoreLayer4
 :StoreLayer4 rdf:type owl:NamedIndividual ,
                       :StoreLayer .
 
