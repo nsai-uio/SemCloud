@@ -1,6 +1,6 @@
 # SemCloud
 This is the open repository for semantics-enhanced cloud system.
 
-It contains the open-source ontology SemCloud.
+It contains the ontology SemCloud.
 
-The SemCloud ontology is developed at University of Oslo in collaboratio wtih Robert Bosch GmbH, open-sourced under the MIT License.
+The SemCloud ontology is developed at University of Oslo in collaboration wtih Robert Bosch GmbH, open-sourced under the MIT License.
